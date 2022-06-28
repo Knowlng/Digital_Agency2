@@ -169,7 +169,7 @@ main {
 
 .img-text div {
     width:32%;
-    padding-left:20px;
+    /* padding-left:20px; */
 }
 
 .img-text .article-desc {
@@ -230,15 +230,101 @@ main {
     grid-row: 3/ last-line;
 }
 
+.about-title h1 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.about-title p {
+    font-weight: 700;
+}
+
+.about-title {
+    padding-bottom: 20px;
+}
+
+
+/* about us section */
+
+
+.about-content-container {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.about-img, .about-text {
+    width: 31%;
+}
+
+.text-inside {
+    position: absolute;
+    background-color: rgb(243, 218, 105);
+    width: 55%;
+    bottom:0px;
+    left:0px;
+    padding:5px 5px;
+}
+
+.text-inside p {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size:12px;
+    text-align: left;
+    padding-left:25px;
+}
+
+.text-inside h3 {
+    margin-bottom:5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.about-img {
+    position:relative;
+}
+
+.about-content-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* about us section end */
+
+
+
+.about-text {
+    align-self: center;
+}
+
+.about-text p {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+.contact-title {
+    margin-top:50px;
+}
+
 .contact-title h1 {
     font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
-    margin-top:200px;
 }
 
 .contact-title p {
     line-height: 30px;
+    font-weight: 700;
 }
 
 .contact-content-container {
@@ -257,7 +343,7 @@ main {
 
 .contact-content-container {
     width: 100%;
-    margin-top:80px;
+    margin-top:30px;
 }
 
 .contact-content-container h2 {
@@ -271,23 +357,24 @@ main {
 }
 
 .content h2 {
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
+    text-transform: uppercase;
 }
 
 .content input, textarea {
     border: none;
     margin-bottom:30px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     background-color: rgb(201, 201, 201, 0.1);
-    height: 30px;
+    height: 40px;
     resize: none;
     font-family: "Montserrat";
     font-weight: 700;
-    width:90%
+    width:95%
 }
 
 .content textarea {
-    height: 100px;
+    height: 180px;
 }
 
 .send-message2 a {
@@ -297,7 +384,7 @@ main {
     padding-bottom: 15px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     white-space: nowrap;
     text-decoration: none;
 }
@@ -343,33 +430,12 @@ main {
     text-align: center;
     font-weight: 500;
     margin-top:5px;
-    margin-bottom:5px;
+    margin-bottom:20px;
     word-wrap: break-word;
 }
 
 .bottom-contacts-text div {
     width:33%;
-}
-
-.bottom-multi-logos {
-    display: flex;
-    justify-content: center;
-    width:100%;
-    margin-top:50px;
-    margin-bottom: 50px;;
-}
-
-.bottom-multi-logos img {
-    height: 40px;
-    max-width: 100%;
-}
-
-.bottom-multi-logos img:first-child {
-    margin-right: 50px;
-}
-
-.bottom-multi-logos img:last-child {
-    margin-left: 50px;
 }
 
 footer {
@@ -431,6 +497,7 @@ footer .back-top {
     }
     .content {
         order:2;
+        text-align: center;
     }
     .content input, textarea {
         width:96%;
@@ -473,8 +540,11 @@ footer .back-top {
 
 @media screen and (max-width:480px) {
     .title-container a {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .send-message2 a  {
+        padding: 15px 25px;
     }
     .navigation ul {
         margin-top: 20px;
